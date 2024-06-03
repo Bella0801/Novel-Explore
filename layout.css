@@ -12,10 +12,11 @@ body {
         "header header header"
         "main" 
         "footer footer footer";
-    grid-template-columns: 1fr;
+    grid-template-columns: auto / 1fr;
     gap: 10px;
     padding: 10px;
     background: #1d0023;
+    
 }
 
 .header {
@@ -73,12 +74,6 @@ a.link:hover {
     padding: 10px;
 }
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Container flexível para as imagens */
 .image-flex {
@@ -87,6 +82,7 @@ a.link:hover {
     padding:  10px;
     flex-flow: row wrap;
     flex-flow: nowrap;
+    
 }
 
 /* Estilo das imagens */
