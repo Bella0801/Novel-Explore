@@ -15,7 +15,7 @@ body {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 10px;
-    background-color: #1d0023;
+    background: #1d0023;
 }
 
 .header {
@@ -42,14 +42,13 @@ body {
 .main_tendencies,
 .main_news,
 .main_concluded {
-    background-color: #333;
-    color: #71a7d3;
+    background: #333;
     padding: 20px;
 }
 
 .footer {
     grid-area: footer;
-    background-color: #333;
+    background: #333;
     color: #efefef;
     padding: 20px;
     text-align: center;
@@ -88,7 +87,6 @@ a.link:hover {
     padding:  10px;
     flex-flow: row wrap;
     flex-flow: nowrap;
-    
 }
 
 /* Estilo das imagens */
