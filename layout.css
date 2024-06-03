@@ -73,20 +73,37 @@ a.link:hover {
     padding: 10px;
 }
 
-.image-flex {
-    display: flex;
-    flex-flow: row wrap;
-    flex-flow: nowrap;
-    gap: 10px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.image-flex img:hover{
-    opacity: 0.3;
+/* Container flexível para as imagens */
+.image-flex {
+    display: flex;
+    gap:  10px; /* Espaçamento entre as imagens */
+    padding:  10px;
+    flex-flow: row wrap;
+    flex-flow: nowrap;
+    
+}
+
+/* Estilo das imagens */
+.image-flex img {
     width: 100%;
     max-width: 100%;
     height: auto;
     overflow: hidden;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Efeito de hover nas imagens */
+.image-flex img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 600px) {
